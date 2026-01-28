@@ -258,7 +258,9 @@ WaleedShell/
 ### Technical Significance
 
 #### 1. **Deep Windows Internals Knowledge**
+
 This project directly interacts with the Windows API at the lowest level:
+
 - `CreateProcess` — how Windows actually spawns programs
 - `ReadConsoleInput` — raw keyboard input handling
 - Handle management (HANDLE, pipes, inheritance)
@@ -267,36 +269,23 @@ This project directly interacts with the Windows API at the lowest level:
 This is how tools like PowerShell, CMD, and Windows Terminal work internally.
 
 #### 2. **Systems Programming Skills**
+
 Core OS concepts built from scratch:
 
-| Concept | What Was Built |
-|---------|----------------|
-| Process creation | `CreateProcess` with pipes and redirection |
-| IPC (Inter-Process Communication) | Anonymous pipes for `cmd1 \| cmd2` |
-| Memory management | Handle lifecycle, buffer management |
-| Console I/O | Raw input mode, cursor control |
+| Concept                           | What Was Built                             |
+| --------------------------------- | ------------------------------------------ |
+| Process creation                  | `CreateProcess` with pipes and redirection |
+| IPC (Inter-Process Communication) | Anonymous pipes for `cmd1 \| cmd2`         |
+| Memory management                 | Handle lifecycle, buffer management        |
+| Console I/O                       | Raw input mode, cursor control             |
 
 #### 3. **No Dependencies**
+
 This is pure C++ with Windows SDK — no frameworks, no libraries like Boost. Everything is handcrafted, giving full control and understanding.
 
 ---
 
-### Practical Significance
-
-#### For Your Career
-- **Systems/Infrastructure roles** — Demonstrates low-level OS knowledge
-- **Security research** — Understanding process injection, handle manipulation
-- **DevOps/SRE** — Building custom tooling
-- **Game development** — Process management, memory control
-
-#### For Your Portfolio
-This stands out because:
-- It's not a tutorial copy-paste project
-- Shows C++ proficiency beyond basic OOP
-- Demonstrates Windows API expertise (rare skill)
-- Complete, functional, documented
-
----
+#
 
 ### What This Project Actually Is
 
@@ -319,15 +308,15 @@ This stands out because:
 
 ### Skills Demonstrated
 
-| Skill | Evidence |
-|-------|----------|
-| Modern C++ (C++20) | Smart pointers, lambdas, structured bindings |
-| Windows API | 50+ API calls across 6 modules |
-| Process management | CreateProcess, pipes, handle inheritance |
-| Text parsing | Tokenizer with quote handling, pipes, redirects |
-| Data structures | Command history, alias maps, process lists |
-| CLI/UX design | Tab completion, arrow key navigation |
-| Code organization | Modular architecture, separation of concerns |
+| Skill              | Evidence                                        |
+| ------------------ | ----------------------------------------------- |
+| Modern C++ (C++20) | Smart pointers, lambdas, structured bindings    |
+| Windows API        | 50+ API calls across 6 modules                  |
+| Process management | CreateProcess, pipes, handle inheritance        |
+| Text parsing       | Tokenizer with quote handling, pipes, redirects |
+| Data structures    | Command history, alias maps, process lists      |
+| CLI/UX design      | Tab completion, arrow key navigation            |
+| Code organization  | Modular architecture, separation of concerns    |
 
 ---
 
@@ -335,25 +324,17 @@ This stands out because:
 
 WaleedShell has features found in professional tools:
 
-| Feature | WaleedShell | CMD | PowerShell |
-|---------|-------------|-----|------------|
-| Tab completion | ✓ | ✓ | ✓ |
-| Command history | ✓ | ✓ | ✓ |
-| Piping | ✓ | ✓ | ✓ |
-| Aliases | ✓ | ✗ | ✓ |
-| Built-in process manager | ✓ | ✗ | ✓ |
-| Built-in network tools | ✓ | ✗ | ✓ |
-| Single portable EXE | ✓ | ✓ | ✗ |
+| Feature                  | WaleedShell | CMD | PowerShell |
+| ------------------------ | ----------- | --- | ---------- |
+| Tab completion           | ✓           | ✓   | ✓          |
+| Command history          | ✓           | ✓   | ✓          |
+| Piping                   | ✓           | ✓   | ✓          |
+| Aliases                  | ✓           | ✗   | ✓          |
+| Built-in process manager | ✓           | ✗   | ✓          |
+| Built-in network tools   | ✓           | ✗   | ✓          |
+| Single portable EXE      | ✓           | ✓   | ✗          |
 
 ---
-
-### Interview Value
-
-If asked "tell me about a challenging project":
-
-> "I built a Windows command shell from scratch in C++. It handles process creation with CreateProcess, implements piping using anonymous pipes, has a custom tokenizer for parsing commands with quotes and redirects, and includes modules for process management, registry access, and network monitoring — all using raw Windows APIs with no external libraries."
-
-This demonstrates understanding of how operating systems work at a fundamental level, not just how to use high-level frameworks.
 
 ## Building from Source
 
