@@ -1,5 +1,5 @@
 #pragma once
-#include "../common.hpp"
+#include "common.hpp"
 #include <iphlpapi.h>
 #include <winsock2.h>
 #include <ws2tcpip.h>

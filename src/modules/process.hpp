@@ -1,5 +1,5 @@
 #pragma once
-#include "../common.hpp"
+#include "common.hpp"
 #include <tlhelp32.h>
 #include <psapi.h>
 
